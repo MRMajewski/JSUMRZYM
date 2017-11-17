@@ -4,3 +4,4 @@ E:\IT\Przyszły Programista\C#\Projekty\JSUMRZYM\JSUMRZYM\bin\Debug\JSUMRZYM.pdb
 E:\IT\Przyszły Programista\C#\Projekty\JSUMRZYM\JSUMRZYM\obj\Debug\JSUMRZYM.csproj.CoreCompileInputs.cache
 E:\IT\Przyszły Programista\C#\Projekty\JSUMRZYM\JSUMRZYM\obj\Debug\JSUMRZYM.exe
 E:\IT\Przyszły Programista\C#\Projekty\JSUMRZYM\JSUMRZYM\obj\Debug\JSUMRZYM.pdb
+E:\IT\Przyszły Programista\C#\Projekty\JSUMRZYM\JSUMRZYM\obj\Debug\JSUMRZYM.csprojResolveAssemblyReference.cache

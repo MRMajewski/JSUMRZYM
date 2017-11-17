@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace rzymskie_cs
 {
@@ -10,6 +14,13 @@ namespace rzymskie_cs
         private static int[] arabic = { 1000, 500, 100, 50, 10, 5, 1 };
         private static char[] roman = { 'M', 'D', 'C', 'L', 'X', 'V', 'I' };
         private static int ROMAN_N = arabic.Length;
+
+
+        
+
+
+
+
 
         /// <summary>
         /// Converts arabic <number> to roman <result>
@@ -125,24 +136,24 @@ namespace rzymskie_cs
         [STAThread]
         static void Main(string[] args)
         {
-            String roman;
 
-            roman = arabic2roman(1981);
-            Console.WriteLine(roman2arabic(roman) + " = " + roman);
-            roman = arabic2roman(1);
-            Console.WriteLine(roman2arabic(roman) + " = " + roman);
-            roman = arabic2roman(3);
-            Console.WriteLine(roman2arabic(roman) + " = " + roman);
-            roman = arabic2roman(4);
-            Console.WriteLine(roman2arabic(roman) + " = " + roman);
-            roman = arabic2roman(5);
-            Console.WriteLine(roman2arabic(roman) + " = " + roman);
-            roman = arabic2roman(6);
-            Console.WriteLine(roman2arabic(roman) + " = " + roman);
-            roman = arabic2roman(45);
-            Console.WriteLine(roman2arabic(roman) + " = " + roman);
-            roman = arabic2roman(68);
-            Console.WriteLine(roman2arabic(roman) + " = " + roman);
+            Dictionary<char, int> RomanToArabic = new Dictionary<char, int>();
+           // Dictionary<char, int> RomanToArabic = new Dictionary<char, int>();
+
+            RomanToArabic.Add('M',1000);
+            RomanToArabic.Add('D', 500);
+            RomanToArabic.Add('C', 100);
+            RomanToArabic.Add('L', 50);
+            RomanToArabic.Add('X', 10);
+            RomanToArabic.Add('V', 5);
+            RomanToArabic.Add('I', 1);
+
+            var ArabicToRoman = RomanToArabic.ToDictionary(kp => kp.Value, kp => kp.Key); //zamiana kluczy z wartościami
+
+            Console.WriteLine(RomanToArabic['M']);
+            Console.WriteLine(ArabicToRoman[1000]);
+
+
         }
     }
 }
